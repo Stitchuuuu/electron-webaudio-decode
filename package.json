@@ -1,0 +1,24 @@
+{
+  "name": "electron-webaudio-decode",
+  "version": "1.0.0",
+  "description": "Decode audio so the WebAudio API can play it. Electron module.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Naxann/electron-webaudio-decode.git"
+  },
+  "keywords": [
+    "audio",
+    "decode",
+    "webaudioapi"
+  ],
+  "author": "Naxann",
+  "license": "GNU GPLv3",
+  "homepage": "https://github.com/Naxann/electron-webaudio-decode.git#readme",
+  "dependencies": {
+    "av": "^0.4.9"
+  }
+}
