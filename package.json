@@ -1,6 +1,6 @@
 {
   "name": "electron-webaudio-decode",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Decode audio so the WebAudio API can play it. Electron module.",
   "main": "index.js",
   "scripts": {

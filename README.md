@@ -7,12 +7,25 @@ It allows you to play a large variety of Audio files unsupported with the defaul
 
 This package use aurora.js for parsing and decoding audio files. 
 
+    var audioCtx = new window.AudioContext();
+    
+    function play(audiobuf) {
+        var source = audioCtx.createBufferSource();
+        source.buffer = audiobuf;
+        source.connect(audioCtx.destination);
+        source.start();
+    }
+    getAudioBuffer("audio/my.wav").then(function(audioBuffer) {
+        play(audioBuffer);
+    });
+    
+
 ## Default Audio format supported
 
 * Wav
 * Aiff
 
-## Optionnal formats
+## Optional formats
 
 Those format are Node.js module for Aurora.js :
 
@@ -24,7 +37,6 @@ Those format are Node.js module for Aurora.js :
 * ALAC (Apple Lossless)
 
 To be able to play those format, just install the package (see below)
-
 
 ### mp3
 
@@ -50,15 +62,6 @@ To be able to play those format, just install the package (see below)
 
     npm install alac
 
-    
-## Example
-
-How to run the example :
-
-    cd example
-    npm install
-    npm start
-    
 ## Other formats
 
 If you know other Aurora.js plugins, tell me in the issues, or just do a pull ;)
